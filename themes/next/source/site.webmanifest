@@ -1,0 +1,15 @@
+{
+    "name": "KronChan",
+    "short_name": "KronChan",
+    "icons": [
+        {
+            "src": "/android-chrome-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#1f94aa",
+    "background_color": "#1f94aa",
+    "start_url": "http://wuwii.com",
+    "display": "standalone"
+}

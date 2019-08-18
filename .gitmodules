@@ -1,0 +1,3 @@
+[submodule "source/_post"]
+	path = source/_posts
+	url = git@github.com:kaimz/_posts.git

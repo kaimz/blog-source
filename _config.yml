@@ -1,0 +1,160 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: My Blog Demo
+subtitle: xxxx
+description: xxx
+author: xxx
+email: xxx
+language: zh-Hans
+timezone:
+keywords: xxx
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: xxxxx
+root: /
+permalink: :title.html
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/
+i18n_dir: :lang
+skip_render: README.md
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 6
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 6
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+#theme: landscape
+theme: next
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+- type: git
+  repo:
+   # github: git@github.com:kaimz/kaimz.github.io.git,master
+   # coding: git@git.coding.net:xxxx.git,master
+#  branch: master
+- type: baidu_url_submitter
+#deploy:
+#  type: baidu_url_submitter
+#rss配置20170731
+eed:
+  type: atom  #feed 类型
+  path: atom.xml  #rss 路径
+  limit: 20  #在 rss 中最多生成的文章数(0显示所有)
+# hexo sitemap网站地图
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+baidu_url_submit:
+  count: 200 # 提交最新的一个链接
+  host: blog.wuwii.com # 在百度站长平台中注册的域名
+  token: zP5GatVby7Og85DG # 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
+  path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
+
+baidushare: true #百度分享功能
+
+baidu_analytics: b847762b9271725a63131e554978de0a
+
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
+# hexo-neat
+
+neat_enable: true
+
+neat_html:
+  enable: true
+  exclude:
+
+neat_css:
+  enable: true
+  exclude:
+    - '*.min.css'
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '*.min.js'
+
+# a lable
+nofollow:
+  enable: true
+  exclude:
+    - wuwii.com # 请设置自已的域名
+
+ #  https://github.com/EYHN/hexo-helper-live2d
+live2d:
+  enable: true
+  scriptFrom: local
+  model:
+    use: live2d-widget-model-tororo  # live2d-widget-model-hijiki
+  display:
+    position: left
+    width: 100
+    height: 200
+  mobile:
+    show: false
+
+Plugins:
+- hexo-generator-sitemap
+- hexo-generator-baidu-sitemap
+- hexo-generate-feed
+- hexo-reference

@@ -1,0 +1,220 @@
+// Custom styles.
+code {
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+// 大代码块的自定义样式
+.highlight, pre {
+    border: none;
+    overflow: auto;
+    position: relative;
+    background: url(https://zqnight.gitee.io/kaimz.github.io/image/hexo-sys/blueprint.png) #F6F6F6;
+    -moz-background-size: 30px,30px;
+    -o-background-size: 30px,30px;
+    -webkit-background-size: 30px,30px;
+    background-size: 30px,30px;
+	
+	display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.45;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #333;
+    border-radius: 4px;
+}
+code, pre {
+    font-family: "Source Code Pro",Consolas,Menlo,Monaco,"Courier New",monospace;
+}
+
+// 主页文章添加阴影效果
+ .post {
+   margin-top: 60px;
+   margin-bottom: 60px;
+   padding: 25px;
+   -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);
+   -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
+  }
+
+.feed-link a{display: inline-block;}
+
+ul {
+list-style-type: disc;  // 空心圆，实心圆为 disc
+}
+
+//首页头部样式
+.header {
+    background: url("https://zqnight.gitee.io/kaimz.github.io/image/hexo-sys/header-bk.jpg");
+}
+.site-meta {
+    float: none;
+}
+.menu {
+    float: none;
+}
+.logo-line-before,.logo-line-after {
+    display: none;
+}
+.menu .menu-item a {
+    font-size: 14px;
+    color: rgb(15, 46, 65);
+    border-radius: 4px;
+}
+.site-meta {
+    margin-left: 0px;
+    text-align: center;
+}
+.site-meta .site-title {
+    font-size: 28px;
+    font-family: 'Comic Sans MS', sans-serif;
+    color: #fff;
+}
+//首页尾部样式
+.footer {
+    background: none;
+    font-size: 16px;
+}
+.footer-inner {
+    font-family: 'Comic Sans MS', sans-serif;
+    text-align: center;
+    color: #4c618f;
+}
+//侧边栏信息样式修改
+.site-author-name {
+    margin: 28px 0 0;
+    color: #090909;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+.links-of-blogroll {
+    font-size: 14px;
+    margin-bottom: 42px;
+}
+.links-of-author {
+    margin-top: 30px;
+}
+.sidebar-inner {
+    color: #649ab6;
+}
+.sidebar {
+    background-position-y: 1vh;
+    box-shadow: inset 2px 2px 40px #bdb2b2;
+	background: url(https://zqnight.gitee.io/kaimz.github.io/image/hexo-sys/bk.jpg) no-repeat;
+	background-size: 320px 659px;
+}
+.sidebar a {
+    color: #649ab6;
+}
+.sidebar a:hover {
+    color: #0c0b0b;
+}
+.site-state-item {
+    display: inline-block;
+    padding: 8px 28px;
+    border-left: 1px solid #649ab6;
+}
+.sidebar-nav .sidebar-nav-active {
+    color: #649ab6;
+    border-bottom-color: #649ab6;
+}
+.sidebar-nav li:hover {
+    color: #0c0b0b;
+}
+//侧栏按钮样式
+.sidebar-toggle {
+    background: #649ab6;
+}
+.back-to-top {
+    background: #649ab6;
+}
+//文章目录样式
+.post-toc .nav .active>a {
+    color: #4f7e96;
+}
+.post-toc ol a:hover {
+    color: #7784ba;
+}
+.sidebar-nav .sidebar-nav-active:hover {
+    color: #37596c;
+}
+a {
+   border-bottom: none;
+   color: #649ab6;
+}
+//首页阅读全文样式
+.post-button {
+    margin-top: 30px;
+    text-align: left;
+}
+.post-button .btn {
+    color: #fff;
+    font-size: 15px;
+    background: #686868;
+    border-radius: 16px;
+    line-height: 2;
+    margin: 0 4px 8px 4px;
+    padding: 0 20px;
+}
+.post-button a{
+  border-bottom: 1px solid #666;
+}
+.post-button a:hover {
+    color: #7784ba;
+}
+
+// 标签的样式
+.posts-expand .post-tags a {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    font-family: 'Comic Sans MS', sans-serif;
+    transition: 0.2s ease-out;
+}
+.posts-expand .post-tags a:hover {
+	background: #649ab6;
+	color: white;
+}
+
+// 自定义页脚跳动的心样式
+@keyframes heartAnimate {
+    0%,100%{transform:scale(1);}
+    10%,30%{transform:scale(0.9);}
+    20%,40%,60%,80%{transform:scale(1.1);}
+    50%,70%{transform:scale(1.1);}
+}
+.with-love {
+	animation: heartAnimate 1.33s ease-in-out infinite;
+}
+.with-love:hover {
+	color: rgb(255, 113, 168);
+}
+
+//标题动态
+.posts-expand .post-title:hover {
+    border-left: #649ab6 20px solid;
+    padding-left: 15px;
+    cursor: pointer;
+    transition: border-width 0.3s linear 0.1s, color 0.2s linear 0.3s;
+}
+.post-wordcount {
+	display: block;
+}	
+
+// 自定义的文章摘要图片样式
+img.img-topic {
+    width: 100%;
+}
+// fork me on github
+.forkme{
+	display: none;
+}
+@media (min-width: 768px) {
+	.forkme{
+		display: inline;
+	}
+}
+@media (max-width: 768px) {
+	#daodream-launcher {
+		display: none;
+	}
+}

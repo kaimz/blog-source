@@ -1,0 +1,7 @@
+# hexo robots.txt
+User-agent: *
+Disallow: 
+Disallow: /js/
+Disallow: /css/
+Disallow: /lib/
+Disallow: /static/
