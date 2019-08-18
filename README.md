@@ -56,7 +56,10 @@ hexo g # 打包
 hexo s # 本地调试
 hexo d # 部署到远程仓库
 ```
+![演示图片](https://github.com/kaimz/blog-source/blob/master/docs/1566144338746.jpg?raw=true)
+
 #### 扩展
+
 1. 使用持续集成工具部署博客仓库。
 
 ### Contribution
