@@ -92,6 +92,6 @@
   {% if theme.title_cheat.enable %}
       {% include '_custom/crash_cheat.swig' %}
   {% endif %}
-
+  {% include '_custom/song.swig' %}
 </body>
 </html>

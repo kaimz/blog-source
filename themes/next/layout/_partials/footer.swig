@@ -33,7 +33,6 @@ Hosted by <a href="https://pages.coding.me" rel="external nofollow">Coding Pages
   <div class="theme-info" style="margin-left:8px">
   <span class="post-count">Site words total count:{{ totalcount(site) }}</span>
 </div>
-<script type="text/javascript" src="https://zqnight.gitee.io/kaimz.github.io/js/high.js"></script>
 <script>
 (function(){
 	var src360 = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?f62559b2127396ecb27f4ed4f4652ea1":"https://jspassport.ssl.qhimg.com/11.0.1.js?f62559b2127396ecb27f4ed4f4652ea1";

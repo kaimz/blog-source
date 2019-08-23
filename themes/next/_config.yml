@@ -681,7 +681,10 @@ daovoice:
 # fork me on github
 github:
   home: https://github.com/kaimz
-
+#右侧 听音乐 设置音乐
+songs:
+  - "https://zqnight.gitee.io/kaimz.github.io/mp3/Jem - Yellow.mp3"
+  - "https://zqnight.gitee.io/kaimz.github.io/mp3/伊藤サチコ%20-%20いつも何度でも.mp3"
 
 # 标题欺骗功能
 title_cheat:
