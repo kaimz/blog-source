@@ -10,7 +10,7 @@
   {% include '_partials/head.swig' %}
   <title>{% block title %}{% endblock %}</title>
   {% include '_third-party/analytics/index.swig' %}
-  
+
   <link href="https://zqnight.gitee.io/kaimz.github.io/css/harlem-shake-style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -28,7 +28,7 @@
           <a rel="external nofollow noopener noreferrer" href="{{ theme.github.home }}"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png" alt="Fork me on GitHub"></a>
     </div>
     {% endif %}
-	
+
 	<header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"> {%- include '_partials/header.swig' %} </div>
     </header>
@@ -89,5 +89,9 @@
   {% include '_third-party/exturl.swig' %}
   {% include '_third-party/daovoice/daovoice.swig' %}
   {% include '_custom/copy.swig' %}
+  {% if theme.title_cheat.enable %}
+      {% include '_custom/crash_cheat.swig' %}
+  {% endif %}
+
 </body>
 </html>

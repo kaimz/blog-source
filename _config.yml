@@ -85,9 +85,8 @@ deploy:
    # github: git@github.com:kaimz/kaimz.github.io.git,master
    # coding: git@git.coding.net:xxxx.git,master
 #  branch: master
-- type: baidu_url_submitter
-#deploy:
-#  type: baidu_url_submitter
+#- type: baidu_url_submitter # 推动到百度站长,需要配置 baidu_url_submit
+
 #rss配置20170731
 eed:
   type: atom  #feed 类型
