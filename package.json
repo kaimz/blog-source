@@ -28,6 +28,6 @@
     "hexo-wordcount": "^3.0.2",
     "live2d-widget-model-hijiki": "^1.0.5",
     "live2d-widget-model-tororo": "^1.0.5",
-    "valine": "^1.1.9-beta4"
+    "valine": "^1.5.0"
   }
 }
